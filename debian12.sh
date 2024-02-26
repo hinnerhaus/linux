@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash -i
 
 ### Check if run as root
 #if [ "$(id -u)" -ne 0 ]; then
