@@ -1,0 +1,21 @@
+LoginGraceTime 30
+PermitRootLogin no
+StrictModes yes
+AllowGroups ssh-users
+
+AuthorizedKeysFile  .ssh/authorized_keys
+
+PubkeyAuthentication yes
+PubkeyAuthenticationMethod +ssh-rsa
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+
+UsePAM no
+
+X11Forwarding yes
+PrintMotd no
+#Banner /etc/ssh/sshd-banner
+
+AcceptEnv LANG LC_*
+
+Subsystem   sftp    /usr/lib/openssh/sftp-server
