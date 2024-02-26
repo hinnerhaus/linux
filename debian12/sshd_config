@@ -6,7 +6,7 @@ AllowGroups ssh-users
 AuthorizedKeysFile  .ssh/authorized_keys
 
 PubkeyAuthentication yes
-PubkeyAuthenticationMethod +ssh-rsa
+PubkeyAuthenticationMethods +ssh-rsa
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 
