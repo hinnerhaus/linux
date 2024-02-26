@@ -1,10 +1,7 @@
 #!/bin/bash -i
 
-### Check if run as root
-#if [ "$(id -u)" -ne 0 ]; then
-#        echo 'This script must be run by root' >&2
-#        exit 1
-#fi
+# Preventing sudo timeout https://serverfault.com/a/833888
+trap "exit" INT TERM; trap "kill 0" EXIT; sudo -v || exit $?; sleep 1; while true; do sleep 60; sudo -nv; done 2>/dev/null &
 
 ### Update packages
 sudo apt update
