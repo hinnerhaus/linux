@@ -1,7 +1,7 @@
 LoginGraceTime 30
 PermitRootLogin no
 StrictModes yes
-AllowGroups ssh-users
+#AllowGroups ssh-users
 
 AuthorizedKeysFile  .ssh/authorized_keys
 
