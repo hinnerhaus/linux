@@ -11,6 +11,7 @@ apt update
 apt -y upgrade
 
 ### Install packages
+apt -y install net-tools ufw apache fail2ban
 apt -y install software-properties-common snapd
 apt -y install python3 python3-launchpadlib
 apt -y install neofetch
@@ -22,4 +23,5 @@ ln -s /snap/bin/certbot /usr/bin/certbot
 ### Customize .bashrc
 echo "neofetch" >> ~/.bashrc
 echo "alias ll='ls -lahF --group-directories-first'" >> ~/.bashrc
-source ~/.bashrc
+
+echo "To update changes, run 'source ~/.bashrc'"
