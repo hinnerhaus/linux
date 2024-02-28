@@ -14,7 +14,7 @@ sudo apt -y install python3 python3-launchpadlib
 sudo apt -y install neofetch
 sudo apt -y install git
 sudo apt -y install mariadb-server
-sudo apt -y install neovim python3-neovim
+sudo apt -y install gcc g++
 
 ### Install certbot
 sudo snap install --classic certbot
