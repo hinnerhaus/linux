@@ -8,7 +8,7 @@ sudo apt update
 sudo apt -y upgrade
 
 ### Install packages
-sudo apt -y install net-tools ufw apache2 fail2ban unzip
+sudo apt -y install net-tools ufw apache2 fail2ban unzip curl
 sudo apt -y install software-properties-common snapd
 sudo apt -y install python3 python3-launchpadlib
 sudo apt -y install neofetch
